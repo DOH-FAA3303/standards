@@ -403,38 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   │</span>
 <span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └───images</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre data-code-line-numbers=""><code>/usr/bin/bash: line 32: $ tree /f
-C:.
-│   .gitignore
-│   about.qmd
-│   index.qmd
-│   standards.Rproj
-│   _quarto.yml
-│
-├───assets
-│       custom.theme
-│       styles.css
-│       styles.scss
-│
-├───std
-│   │   creds.qmd
-│   │   lic.qmd
-│   │   public_code.qmd
-│   │   security.qmd
-│   │   templates.qmd
-│   │
-│   └───images
-│
-├───tools
-│   │   how_to.qmd
-│   │   iac.qmd
-│   │   link_code.qmd
-│   │   readme.qmd
-│   │   release.qmd
-│   │   renv.qmd
-│   │   teams.qmd
-│   │
-│   └───images: No such file or directory</code></pre>
+<pre data-code-line-numbers=""><code>Error in running command bash</code></pre>
 </div>
 </div>
 </div>
@@ -1019,7 +988,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/DOH-FAA3303\.github\.io\/standards\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }

@@ -360,6 +360,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 <!-- Content for HTML --->
 </section>
 <section id="section" class="level3 unnumbered page-columns page-full">
@@ -404,7 +405,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 <!-- Content for pdf --->
+<div style="page-break-after: always;"></div>
 </section>
 <section id="safe-guards---prevent-accidental-leaks" class="level3" data-number="0.0.3">
 <h3 data-number="0.0.3" class="anchored" data-anchor-id="safe-guards---prevent-accidental-leaks"><span class="header-section-number">0.0.3</span> Safe Guards - Prevent Accidental Leaks!</h3>
@@ -433,6 +436,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb8" data-source-line-numbers="nil" data-code-line-numbers="nil"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> ls-files <span class="at">-v</span> . <span class="kw">|</span> <span class="fu">grep</span> ^S</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 </section>
 </section>
 </section>
@@ -534,6 +538,7 @@ Note
 <p>We can’t use the “Non capture group” feature of regex. Meaning we can’t use patterns like this in our regex: (?:abc) – see https://regexr.com IMPORTANT: Tab separate your regex expressions. Making new lines caused a bit of chaos and took really long to figure out. (you can use multiple tabs to separate them more visually)</p>
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 </section>
 <section id="pre-recieve-hooks" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="pre-recieve-hooks"><span class="header-section-number">1.2</span> Pre-Recieve Hooks</h2>
@@ -910,7 +915,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/DOH-FAA3303\.github\.io\/standards\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
